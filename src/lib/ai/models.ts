@@ -36,6 +36,7 @@ const staticModels = {
     "claude-4-sonnet": anthropic("claude-sonnet-4-20250514"),
   },
   xai: {
+    "grok-4": xai("grok-4-latest"),
     "grok-2": xai("grok-2-1212"),
     "grok-3-mini": xai("grok-3-mini-latest"),
     "grok-3": xai("grok-3-latest"),
