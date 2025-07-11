@@ -39,9 +39,8 @@ const staticModels = {
   },
   xai: {
     "grok-4": xai("grok-4-latest"),
-    "grok-2": xai("grok-2-1212"),
-    "grok-3-mini": xai("grok-3-mini-latest"),
     "grok-3": xai("grok-3-latest"),
+    "grok-3-mini": xai("grok-3-mini-latest"),
   },
   ollama: {
     "gemma3:1b": ollama("gemma3:1b"),
