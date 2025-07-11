@@ -15,7 +15,10 @@ if (!globalThis.__mcpClientsManager__) {
   const storage = FILE_BASED_MCP_CONFIG
     ? createFileBasedMCPConfigsStorage()
     : createDbBasedMCPConfigsStorage();
-  globalThis.__mcpClientsManager__ = createMCPClientsManager(storage);
+  globalThis.__mcpClientsManager__ = createMCPClientsManager(
+    storage,
+    60 * 60 * 2,
+  );
 }
 
 export const initMCPManager = async () => {
